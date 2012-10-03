@@ -11,8 +11,8 @@
 
     <td class="list_description">
       <dl>
-        <dt><%= picture.name %></dt>
-        <dd><p><%= truncate(strip_tags(picture.comment), length: 80) %></p></dd>
+        <dt><%= picture.title %></dt>
+        <dd><p><%= truncate(strip_tags(picture.description), length: 80) %></p></dd>
         <dd><%= picture.user_id %></dd>
       </dl>
     </td>
