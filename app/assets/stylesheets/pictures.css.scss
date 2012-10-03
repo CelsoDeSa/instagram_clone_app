@@ -1,3 +1,51 @@
 // Place all the styles related to the pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.pictures {
+
+	table {
+		border-radius: 10px;
+		background: white;
+    	border-collapse: collapse;
+    	margin-left: 200px;
+    	margin-right: 200px;
+  	}
+
+  	table tr td {
+    	padding: 40px 10px 40px 20px;
+    	vertical-align: top;
+  	}
+
+  	.list_picture {
+  		border-top:thick solid #DCDCDC;
+  		border-top-width:1px;
+  	}
+
+	.list_image{
+		border:5px solid #FFFFFF;
+		width: 450px;
+	}
+
+	.list_description{
+
+
+    	dl {
+      		margin: 5px 0 0 -15px;
+    	}
+
+    	dt {
+      		color:        #6699FF;
+      		font-weight:  bold;
+      		font-size:    larger;
+    	}
+
+    	dd {
+      		margin: 0;
+    	}
+	}
+
+	.list_actions {
+			font-size:    x-small;
+    		text-align:   left;
+  	}
+}
