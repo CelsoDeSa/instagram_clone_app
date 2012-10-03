@@ -1,5 +1,5 @@
 class Picture < ActiveRecord::Base
-  attr_accessible :comment, :name, :user_id, :image
+  attr_accessible :description, :title, :user_id, :image
 
   mount_uploader :image, ImageUploader
 end
