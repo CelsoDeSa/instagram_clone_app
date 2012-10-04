@@ -1,24 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<table>
+	<tr class="list_picture">
+<td>
   <%= image_tag(@picture.image_url.to_s, class: 'list_image') %>
-</p>
+</td>
 
-<p>
-  <b>Title:</b>
-  <%= @picture.title %>
-</p>
+<td class="list_description">
+	<dl>
+		<dt><%= @picture.title %></dt>
 
-<p>
-  <b>Description:</b>
-  <%= @picture.description %>
-</p>
+		<dd><p><%= @picture.description %></p></dd>
 
-<p>
-  <b>User:</b>
-  <%= @picture.user_id %>
-</p>
+		<dd><p><%= @picture.user_id %></p></dd>
+	</dl>
+</td>
 
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+<td class="list_actions">
+<%= link_to 'Edit', edit_picture_path(@picture) %>|<%= link_to 'Back', root_path %>
+</td>
+</tr>
+</table>
