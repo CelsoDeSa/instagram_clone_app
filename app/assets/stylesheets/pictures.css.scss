@@ -4,8 +4,8 @@
 .pictures {
 
 	table {
-      margin-top: 60px;
-		  border-radius: 10px;
+      margin-top: 80px;
+      border-radius: 10px;
       background: white;
     	border-collapse: collapse;
     	margin-left: 200px;
@@ -18,12 +18,12 @@
   	}
 
   	.list_picture {
-  		border-top:thick solid #3B84C0;
-  		border-top-width:1px;
+  		border-bottom:thick solid #EDEDED;
+  		border-bottom-width:1px;
   	}
 
 	.list_image{
-		border:5px solid #FFFFFF;
+    border: 5px solid #d4d4cd;
 		width: 450px;
 	}
 

@@ -12,10 +12,12 @@
  *= require_tree .
  */
 #primary {
-	background-color: white;
+	background-color: #517FA4;
+	background-image:-webkit-linear-gradient(top, #517FA4, #306088);
+	box-shadow: 0px 2px 2px black;
 	position: fixed;
 	top: 0;
 	left: 0;
-	min-height: 50px;
+	min-height: 40px;
 	min-width: 100%;
 }
