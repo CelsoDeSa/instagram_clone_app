@@ -4,19 +4,19 @@
   <tr class="list_picture">
     
     <td>
-      <%= image_tag(picture.image_url.to_s, class: 'list_image') %>
+      <%= link_to image_tag(picture.image_url.to_s, class: 'list_image'), picture %>
     </td>
 
     <td class="list_description">
       <dl>
-        <dt><%= picture.title %></dt>
+        <dt><%= link_to picture.title, picture %></dt>
         <dd><p><%= truncate(strip_tags(picture.description), length: 80) %></p></dd>
         <dd><%= picture.user_id %></dd>
       </dl>
     </td>
 
         <td class="list_actions">
-            <%= link_to 'New', new_picture_path %>|<%= link_to 'Show', picture %>|<%= link_to 'Edit', edit_picture_path(picture) %>|<%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'New', new_picture_path %>|<%= link_to 'Edit', edit_picture_path(picture) %>|<%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
       
   </tr>
