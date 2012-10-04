@@ -33,6 +33,10 @@
 		text-shadow: #063056 0px 1px 1px;
 	}
 
+	#primary a {
+		&:hover { background-color: transparent; }
+	}
+
 	#primary img {
 		width: 200px;
 		margin-left: 200px;
