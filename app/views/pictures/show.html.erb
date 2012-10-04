@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag(@picture.image_url.to_s, class: 'list_image') %>
+</p>
+
+<p>
   <b>Title:</b>
   <%= @picture.title %>
 </p>
