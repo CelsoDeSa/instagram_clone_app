@@ -21,3 +21,20 @@
 	min-height: 40px;
 	min-width: 100%;
 }
+
+	#primary p {
+		color: white;
+		outline-color: white;
+		font-size: 20px;
+		font-weight: bold;
+		height: auto;
+		text-align: center;
+		font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		text-shadow: #063056 0px 1px 1px;
+	}
+
+	#primary img {
+		width: 200px;
+		margin-left: 200px;
+		margin-bottom: -20px;
+	}

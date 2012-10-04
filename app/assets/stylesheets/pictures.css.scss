@@ -6,6 +6,11 @@
 	table {
       margin-top: 80px;
       border-radius: 10px;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255,255,255,0.9) inset;
+      -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255,255,255,0.9) inset;
+      -o-box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255,255,255,0.9) inset;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, 0.9) inset;
       background: white;
     	border-collapse: collapse;
     	margin-left: 200px;
@@ -22,7 +27,7 @@
   		border-bottom-width:1px;
   	}
 
-	.list_image{
+	.list_image {
     border: 5px solid #d4d4cd;
 		width: 450px;
 	}
