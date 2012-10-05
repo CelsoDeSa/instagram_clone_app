@@ -1,15 +1,8 @@
 class SessionsController < ApplicationController
-    after_create :redirect      
-    
-  
-  def redirect
-    redirect_to root_url
-  end
-
-
   def create
   	user = User.from_omniauth(env["omniauth.auth"])
   	session[:user_id] = user.id
+  	redirect_to('/')
   end
 
   def destroy
