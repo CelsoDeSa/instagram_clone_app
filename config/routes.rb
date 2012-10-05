@@ -1,8 +1,4 @@
 Deslumbre::Application.routes.draw do
-  get "sessions/create"
-
-  get "sessions/destroy"
-
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
