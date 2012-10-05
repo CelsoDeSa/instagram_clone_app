@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
     
   
   def redirect
-    redirect_to('/')
+    redirect_to root_url
   end
 
   def self.from_omniauth(auth)
