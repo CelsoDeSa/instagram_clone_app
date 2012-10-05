@@ -34,7 +34,7 @@
 	}
 
 	#primary a {
-		&:hover { background-color: transparent; }
+		&:hover { background-color: transparent; color: white; }
 	}
 
 	#primary img {
@@ -42,7 +42,9 @@
 		margin-left: 200px;
 		margin-bottom: -20px;
 	}
-
-	#primary nav {
+	
+	#facebook {
 		margin-right: 200px;
+		margin-left: 1000px;
+		margin-top: -35px;
 	}

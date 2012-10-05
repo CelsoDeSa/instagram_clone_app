@@ -10,7 +10,7 @@
 	<header id="primary">
 		<%= link_to image_tag("deslumbre.png"),  root_path %>
 		<p> </p>
-		<nav>
+		<nav id="facebook">
 			 <% if current_user %>
 			    Signed in as <strong><%= current_user.name %></strong>!
 			    <%= link_to "Sign out", signout_path, id: "sign_out" %>
