@@ -1,4 +1,11 @@
 class User < ActiveRecord::Base
+  after_create :redirect      
+    
+  
+  def redirect
+    redirect_to('/')
+  end
+
   def self.from_omniauth(auth)
   	where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
   		user.provider = auth.provider
