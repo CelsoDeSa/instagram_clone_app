@@ -14,11 +14,13 @@
 #primary {
 	background-color: #517FA4;
 	background-image:-webkit-linear-gradient(top, #517FA4, #306088);
+	background-image:-moz-linear-gradient(19% 75% 90deg,#517FA4, #306088);
+	background: url(nav-bg.png) repeat-x;
 	box-shadow: 0px 2px 2px black;
 	position: fixed;
 	top: 0;
 	left: 0;
-	min-height: 40px;
+	max-height: 43px;
 	min-width: 100%;
 }
 
@@ -34,11 +36,18 @@
 	}
 
 	#primary a {
-		&:hover { background-color: transparent; color: white; }
+		  color: transparent;
+		  &:visited {
+		    color: transparent;
+		    background-color: transparent;
+		  }
+		  &:hover {
+		    color: transparent;
+		    background-color: transparent;
+		  }
 	}
 
 	#primary img {
-		width: 200px;
 		margin-left: 200px;
 		margin-bottom: -20px;
 	}
@@ -46,5 +55,5 @@
 	#facebook {
 		position: absolute;
 		right: 200px;
-		margin-top: -45px;
+		margin-top: -42px;
 	}
