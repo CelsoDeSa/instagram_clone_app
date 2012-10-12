@@ -1,10 +1,14 @@
 Deslumbre::Application.routes.draw do
+
+  get "tag/index"
+
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
 
+  get '/tag.json', to: 'tag#index', as: :pictures_tags
+  get 'tags/:tag', to: 'pictures#index', as: :tag
   resources :pictures
-  
   root :to => 'pictures#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

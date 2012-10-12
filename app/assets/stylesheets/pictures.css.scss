@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .pictures {
 
-	table {
+	table, #tag_cloud {
       margin-top: 80px;
       border-radius: 10px;
       -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, 0.9) inset;
@@ -25,11 +25,19 @@
     table a {
       &:hover { background-color: transparent; color: #000; }
     }
+  
+  #tag_cloud {
+    width: 400px;
+    line-height: 1.6em;
+    .s { font-size: 0.8em; }
+    .m { font-size: 1.2em; }
+    .l { font-size: 1.8em; }
+  }
 
-  	.list_picture {
+	.list_picture {
   		border-bottom:thick solid #EDEDED;
   		border-bottom-width:1px;
-  	}
+  }
 
 	.list_image {
     border: 5px solid #d4d4cd;
@@ -59,4 +67,5 @@
 			font-size:    x-small;
     		text-align:   left;
   	}
+
 }

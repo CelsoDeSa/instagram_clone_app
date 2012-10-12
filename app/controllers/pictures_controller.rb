@@ -2,11 +2,15 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.all
+    if params[:tag]
+      @pictures = Picture.tagged_with(params[:tag])
+    else
+      @pictures = Picture.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @pictures }
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @pictures }
+      end
     end
   end
 

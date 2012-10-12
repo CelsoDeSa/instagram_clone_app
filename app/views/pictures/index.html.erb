@@ -1,4 +1,10 @@
 <table>
+  <div id="tag_cloud">
+    <% tag_cloud Picture.tag_counts, %w[s m l] do |tag, css_class| %>
+      <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+    <% end %>
+  </div>
+
 <% @pictures.each do |picture| %>
  
   <tr class="list_picture">
@@ -10,6 +16,7 @@
     <td class="list_description">
       <dl>
         <dt><%= link_to picture.title, picture %></dt>
+        <dd><%= raw picture.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></dd>
         <dd><p><%= truncate(strip_tags(picture.description), length: 80) %></p></dd>
         <dd><%= picture.user_id %></dd>
       </dl>
