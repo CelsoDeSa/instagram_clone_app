@@ -8,4 +8,5 @@ jQuery ->
 		preventDuplicates: true
 		resultsLimit: 3
 		tokenLimit: 7
-		searchingText: "Press the space key for New Tags"
+		tokenDelimiter: ","
+		searchingText: "hit space for New Tag"
