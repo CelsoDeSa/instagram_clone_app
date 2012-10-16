@@ -7,10 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller.controller_name %>'>
+<div id="fb-root">	
 	<header id="primary">
 		<%= link_to image_tag("deslumbre-logo2.png"),  root_path %>
 		<p> </p>
-		<div id="fb-root">
+		
 		<nav id="facebook">
 			 <% if current_user %>
 			    Signed in as <strong><%= current_user.name %></strong>!
@@ -19,10 +20,10 @@
 		    	<%= link_to image_tag("login-facebook.png"), "/auth/facebook", id: "sign_in" %>
 		  	<% end %>
 		</nav>
-		</div>
+
 	</header>
 
 <%= yield %>
-
+</div>
 </body>
 </html>
