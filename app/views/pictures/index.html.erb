@@ -18,6 +18,7 @@
         <dt><%= link_to picture.title, picture %></dt>
         <dd><%= raw picture.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ') %></dd>
         <dd><p><%= truncate(strip_tags(picture.description), length: 80) %></p></dd>
+        <div class="fb-like" data-href="<%= link_to picture %>" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
         <dd><%= picture.user_id %></dd>
       </dl>
     </td>
