@@ -18,7 +18,7 @@
 </td>
 
 <td class="list_actions">
-<%= link_to 'Edit', edit_picture_path(@picture) %>|<%= link_to 'Back', root_path %>
+<%= link_to 'Edit', edit_picture_path(@picture) %>|<%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %><%= link_to 'Back', root_path %>
 </td>
 </tr>
 </table>

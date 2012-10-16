@@ -12,6 +12,10 @@ class User < ActiveRecord::Base
   	end
   end
 
+  def self.name
+    user.name    
+  end
+
   def facebook
     @facebook ||= Koala::Facebook::API.new(oauth_token)
       block_given? ? yield(@facebook) : @facebook
