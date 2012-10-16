@@ -21,11 +21,11 @@
         <dd><%= picture.user_id %></dd>
       </dl>
     </td>
-
+<% if current_user %>
         <td class="list_actions">
             <%= link_to 'New', new_picture_path %>|<%= link_to 'Edit', edit_picture_path(picture) %>|<%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
         </td>
-      
+<% end %>
   </tr>
 <% end %>
 </table>

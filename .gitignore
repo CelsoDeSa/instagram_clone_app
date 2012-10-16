@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#Ignore a initializer (by Celso)
+/config/initializers/dev_environment.rb

@@ -6,6 +6,7 @@ class TagController < ApplicationController
     @tags = ActsAsTaggableOn::Tag.where("tags.name LIKE '%#{query}%' OR tags.name LIKE '#{query}'")
 
 	if @tags.empty?
+		query = query.chomp(".")
 		ActsAsTaggableOn::Tag.find_or_create_by_name_and_id(id: "#{query}", name: "#{query}")
 	else 
 		respond_to do |format|
