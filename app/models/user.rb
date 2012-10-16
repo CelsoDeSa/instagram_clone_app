@@ -10,10 +10,11 @@ class User < ActiveRecord::Base
   		user.oauth_expires_at = Time.at(auth.credentials.expires_at)
   		user.save!
   	end
+    @name = user.name
   end
 
   def self.name
-    user.name    
+    @name  
   end
 
   def facebook
