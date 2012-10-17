@@ -6,7 +6,7 @@ class PicturesController < ApplicationController
       @pictures = Picture.tagged_with(params[:tag])
     else
       @pictures = Picture.all
-
+      
       respond_to do |format|
         format.html # index.html.erb
         format.json { render json: @pictures }

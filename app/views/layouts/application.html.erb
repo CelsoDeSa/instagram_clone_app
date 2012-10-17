@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Deslumbre</title>
+  <title><% if @picture %>
+  		<%= @picture.title %>
+  		<% else %>
+  		<%= "Deslumbre" %>
+  		<% end %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
